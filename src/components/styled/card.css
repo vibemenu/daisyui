@@ -1,15 +1,15 @@
 .card {
   @apply rounded-box;
-  &:focus-visible{
+  &:focus-visible {
     box-shadow: 0 0 0 2px currentColor;
   }
-  &.bordered{
+  &.bordered {
     @apply border border-base-200;
   }
-  &-bordered{
+  &-bordered {
     @apply border border-base-200;
   }
-  &.compact{
+  &.compact {
     .card-body {
       @apply p-4 text-sm;
     }
@@ -18,7 +18,7 @@
     }
   }
   &-body {
-    padding: var(--padding-card, 2rem);
+    padding: var(--padding-card, 2em);
   }
   &-title {
     @apply mb-3 text-xl font-semibold;

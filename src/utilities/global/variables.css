@@ -19,5 +19,5 @@
   --tab-radius: 0;
 }
 .tab-rounded-lg {
-  --tab-radius: 0.5rem;
+  --tab-radius: 0.5em;
 }

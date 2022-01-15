@@ -1,4 +1,4 @@
-.card-compact{
+.card-compact {
   [class~="card-body"] {
     @apply p-4 text-sm;
   }
@@ -6,9 +6,9 @@
     @apply mb-1;
   }
 }
-.card-normal{
+.card-normal {
   [class~="card-body"] {
-    padding: var(--padding-card, 2rem);
+    padding: var(--padding-card, 2em);
     @apply text-base;
   }
   [class~="card-title"] {

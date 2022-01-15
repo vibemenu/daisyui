@@ -1,4 +1,4 @@
-.navbar{
-  padding: var(--navbar-padding, .5rem);
-  min-height: 4rem;
+.navbar {
+  padding: var(--navbar-padding, 0.5em);
+  min-height: 4em;
 }

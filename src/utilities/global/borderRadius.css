@@ -1,17 +1,17 @@
 .rounded-box {
-  border-radius: var(--rounded-box, 1rem);
+  border-radius: var(--rounded-box, 1em);
 }
 .rounded-t-box {
-  border-top-left-radius: var(--rounded-box, 1rem);
-  border-top-right-radius: var(--rounded-box, 1rem);
+  border-top-left-radius: var(--rounded-box, 1em);
+  border-top-right-radius: var(--rounded-box, 1em);
 }
 .rounded-b-box {
-  border-bottom-left-radius: var(--rounded-box, 1rem);
-  border-bottom-right-radius: var(--rounded-box, 1rem);
+  border-bottom-left-radius: var(--rounded-box, 1em);
+  border-bottom-right-radius: var(--rounded-box, 1em);
 }
 .rounded-btn {
-  border-radius: var(--rounded-btn, 0.5rem);
+  border-radius: var(--rounded-btn, 0.5em);
 }
 .rounded-badge {
-  border-radius: var(--rounded-badge, 1.9rem);
+  border-radius: var(--rounded-badge, 1.9em);
 }

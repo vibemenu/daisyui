@@ -1,22 +1,22 @@
-.steps{
-  &-horizontal{
+.steps {
+  &-horizontal {
     [class~="step"] {
       grid-template-rows: 40px 1fr;
       grid-template-columns: auto;
-      min-width: 4rem;
+      min-width: 4em;
       &:before {
         @apply h-2 w-full translate-y-0 translate-x-0;
-        content: '';
+        content: "";
         margin-left: -100%;
       }
     }
   }
-  &-vertical{
+  &-vertical {
     [class~="step"] {
-      gap: .5rem;
+      gap: 0.5em;
       grid-template-columns: 40px 1fr;
       grid-template-rows: auto;
-      min-height: 4rem;
+      min-height: 4em;
       justify-items: start;
       &:before {
         @apply w-2 h-full -translate-y-1/2 -translate-x-1/2;

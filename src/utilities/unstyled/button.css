@@ -1,19 +1,19 @@
-.btn{
+.btn {
   &-xs {
     @apply px-2 h-6 min-h-6;
-    font-size: 0.75rem;
+    font-size: 0.75em;
   }
   &-sm {
     @apply px-3 h-8 min-h-8;
-    font-size: 0.875rem;
+    font-size: 0.875em;
   }
   &-md {
     @apply px-4 h-12 min-h-12;
-    font-size: 0.875rem;
+    font-size: 0.875em;
   }
   &-lg {
     @apply px-6 h-16 min-h-16;
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
   &-wide {
     @apply w-64;
@@ -21,7 +21,7 @@
   &-block {
     @apply w-full;
   }
-  &-square{
+  &-square {
     &:where(.btn-xs) {
       @apply h-6 w-6 p-0;
     }
@@ -35,7 +35,7 @@
       @apply h-16 w-16 p-0;
     }
   }
-  &-circle{
+  &-circle {
     &:where(.btn-xs) {
       @apply rounded-full h-6 w-6 p-0;
     }

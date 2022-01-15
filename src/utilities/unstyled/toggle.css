@@ -1,18 +1,18 @@
-.toggle{
+.toggle {
   &-xs {
-    --handleoffset: .5rem;
+    --handleoffset: 0.5em;
     @apply w-6 h-4;
   }
   &-sm {
-    --handleoffset: .75rem;
+    --handleoffset: 0.75em;
     @apply w-8 h-5;
   }
   &-md {
-    --handleoffset: 1.5rem;
+    --handleoffset: 1.5em;
     @apply w-12 h-6;
   }
   &-lg {
-    --handleoffset: 2rem;
+    --handleoffset: 2em;
     @apply w-16 h-8;
   }
 }
