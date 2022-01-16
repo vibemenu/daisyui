@@ -13,7 +13,7 @@
   @apply absolute;
 }
 .tooltip:before {
-  @apply rounded  px-2 max-w-xs py-1;
+  @apply rounded text-sm px-2 max-w-xs py-1;
   background-color: var(--tooltip-color);
   color: var(--tooltip-text-color);
   width: max-content;
