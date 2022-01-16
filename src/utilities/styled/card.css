@@ -1,6 +1,6 @@
 .card-compact {
   [class~="card-body"] {
-    @apply p-4 text-sm;
+    @apply p-4;
   }
   [class~="card-title"] {
     @apply mb-1;

@@ -1,16 +1,16 @@
 .badge {
   &-xs {
-    @apply text-xs leading-3 h-3;
+    @apply leading-3 h-3;
     padding-left: 0.313em;
     padding-right: 0.313em;
   }
   &-sm {
-    @apply text-xs leading-4 h-4;
+    @apply leading-4 h-4;
     padding-left: 0.438em;
     padding-right: 0.438em;
   }
   &-md {
-    @apply text-sm leading-5 h-5;
+    @apply leading-5 h-5;
     padding-left: 0.563em;
     padding-right: 0.563em;
   }

@@ -1,62 +1,67 @@
 .menu {
-  &.horizontal{
-    li{
-      &.bordered{
-        >a, >span{
+  &.horizontal {
+    li {
+      &.bordered {
+        > a,
+        > span {
           @apply border-l-0 border-b-4 border-primary;
         }
       }
     }
   }
-  &[class*="p-"] li a{
+  &[class*="p-"] li a {
     @apply rounded-btn;
   }
-  li{
-    >:where(a),
-    >:where(span){
+  li {
+    > :where(a),
+    > :where(span) {
       @apply text-current px-5 py-3;
     }
 
-    >:where(a:focus),
-    >:where(a:hover){
+    > :where(a:focus),
+    > :where(a:hover) {
       @apply bg-base-content bg-opacity-10;
     }
-    >:where(a.active){
+    > :where(a.active) {
       @apply bg-primary text-primary-content;
     }
-    >:where(a:active){
+    > :where(a:active) {
       @apply bg-primary-focus text-primary-content;
     }
 
-    &.disabled{
-      &>a, &>span{
+    &.disabled {
+      & > a,
+      & > span {
         @apply text-base-content text-opacity-20 hover:bg-transparent;
       }
     }
-    &.bordered{
-      a, span{
+    &.bordered {
+      a,
+      span {
         @apply border-l-4 border-primary;
       }
     }
-    &.hover-bordered{
-      a{
+    &.hover-bordered {
+      a {
         @apply border-l-4 border-transparent hover:border-primary;
       }
     }
   }
-  ul{
+  ul {
     @apply pl-6;
   }
-  &.compact{
-    li{
-      >a, >span{
-        @apply py-2 text-sm;
+  &.compact {
+    li {
+      > a,
+      > span {
+        @apply py-2;
       }
     }
   }
-  .menu-title{
-    >a, >span{
-      @apply py-1 text-xs text-base-content text-opacity-40 font-bold;
+  .menu-title {
+    > a,
+    > span {
+      @apply py-1  text-base-content text-opacity-40 font-bold;
     }
   }
 }

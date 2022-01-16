@@ -11,7 +11,7 @@
   }
   &.compact {
     .card-body {
-      @apply p-4 text-sm;
+      @apply p-4;
     }
     .card-title {
       @apply mb-1;
@@ -21,7 +21,7 @@
     padding: var(--padding-card, 2em);
   }
   &-title {
-    @apply mb-3 text-xl font-semibold;
+    @apply mb-3  font-semibold;
   }
   &-actions:first-child {
     @apply mb-2;

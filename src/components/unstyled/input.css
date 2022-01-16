@@ -1,6 +1,6 @@
 .input {
   @apply transition duration-200 ease-in-out flex-shrink;
-  @apply px-4 h-12 text-sm leading-loose;
+  @apply px-4 h-12  leading-loose;
   &:focus {
     @apply outline-none;
   }
@@ -12,16 +12,16 @@
     @apply rounded-none;
   }
   &-md {
-    @apply text-sm leading-loose;
+    @apply leading-loose;
   }
   &-lg {
-    @apply text-lg leading-loose;
+    @apply leading-loose;
   }
   &-sm {
-    @apply text-sm leading-8;
+    @apply leading-8;
   }
   &-xs {
-    @apply text-xs leading-relaxed;
+    @apply leading-relaxed;
   }
   :where(span) {
     @apply bg-base-300 flex items-center px-4;
