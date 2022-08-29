@@ -1,7 +1,7 @@
 .table {
   @apply text-left;
   :where(th, td) {
-    @apply p-4 whitespace-nowrap align-middle;
+    @apply whitespace-nowrap p-4 align-middle;
   }
   tr.active,
   tr.active:nth-child(even) {
@@ -26,39 +26,47 @@
   }
   :where(thead, tfoot) {
     :where(th, td) {
-      @apply bg-base-200  uppercase font-bold;
-      &:first-child {
-        @apply rounded-l-lg;
-      }
-      &:last-child {
-        @apply rounded-r-lg;
-      }
+      @apply bg-base-200 text-xs font-bold uppercase;
     }
   }
-  /* th:first-child{
-    box-shadow: -1px 0 hsl(var(--b2, 210 20% 98%)) inset;
-  } */
 
   :where(tbody th, tbody td) {
     @apply bg-base-100;
   }
 
   &-zebra tbody {
-    tr {
-      th,
-      td {
-        &:first-child {
-          @apply rounded-l-lg;
-        }
-        &:last-child {
-          @apply rounded-r-lg;
-        }
-      }
-    }
     tr:nth-child(even) {
       th,
       td {
         @apply bg-base-200;
+      }
+    }
+  }
+}
+
+:where(.table *:first-child) {
+  :where(*:first-child) {
+    :where(th, td) {
+      &:first-child {
+        @apply rounded-tl-lg;
+      }
+
+      &:last-child {
+        @apply rounded-tr-lg;
+      }
+    }
+  }
+}
+
+:where(.table *:last-child) {
+  :where(*:last-child) {
+    :where(th, td) {
+      &:first-child {
+        @apply rounded-bl-lg;
+      }
+
+      &:last-child {
+        @apply rounded-br-lg;
       }
     }
   }

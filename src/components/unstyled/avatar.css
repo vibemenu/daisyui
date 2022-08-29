@@ -1,14 +1,14 @@
-.avatar{
+.avatar {
   @apply relative inline-flex;
-  &>div{
-    @apply overflow-hidden block;
+  & > div {
+    @apply block aspect-square overflow-hidden;
   }
-  img{
-    @apply object-cover w-full h-full;
+  img {
+    @apply h-full w-full object-cover;
   }
-  &.placeholder{
-    &>div{
-      @apply flex items-center justify-center
+  &.placeholder {
+    & > div {
+      @apply flex items-center justify-center;
     }
   }
 }

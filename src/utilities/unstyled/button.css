@@ -1,5 +1,6 @@
 .btn {
   &-xs {
+<<<<<<< HEAD
     @apply px-2 h-6 min-h-6;
     font-size: 0.75em;
   }
@@ -14,6 +15,22 @@
   &-lg {
     @apply px-6 h-16 min-h-16;
     font-size: 1.125em;
+=======
+    @apply h-6 px-2 min-h-6;
+    font-size: 0.75rem;
+  }
+  &-sm {
+    @apply h-8 px-3 min-h-8;
+    font-size: 0.875rem;
+  }
+  &-md {
+    @apply h-12 px-4 min-h-12;
+    font-size: 0.875rem;
+  }
+  &-lg {
+    @apply h-16 px-6 min-h-16;
+    font-size: 1.125rem;
+>>>>>>> bb7e3f523b3be1fc73373b0f0ce6577f5eebd8b5
   }
   &-wide {
     @apply w-64;
@@ -37,16 +54,16 @@
   }
   &-circle {
     &:where(.btn-xs) {
-      @apply rounded-full h-6 w-6 p-0;
+      @apply h-6 w-6 rounded-full p-0;
     }
     &:where(.btn-sm) {
-      @apply rounded-full h-8 w-8 p-0;
+      @apply h-8 w-8 rounded-full p-0;
     }
     &:where(.btn-md) {
-      @apply rounded-full h-12 w-12 p-0;
+      @apply h-12 w-12 rounded-full p-0;
     }
     &:where(.btn-lg) {
-      @apply rounded-full h-16 w-16 p-0;
+      @apply h-16 w-16 rounded-full p-0;
     }
   }
 }

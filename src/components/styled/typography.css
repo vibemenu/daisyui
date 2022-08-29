@@ -1,54 +1,23 @@
-/* v0.4 backward compatibility */
-/* .prose{
-  a,
-  blockquote,
-  figure figcaption,
-  a code,
-  thead,
-  strong,
-  .lead,
-  h1,
-  h2,
-  h3,
-  h4{
-    color: inherit;
-  }
-  tbody tr,
-  thead{
-    border-bottom-color: hsl(var(--bc) / 20%);
-  }
-  ul > li:before{
-    background-color: hsl(var(--bc) / 40%);
-  }
-  ol > li:before{
-    color: hsl(var(--bc) / 40%);
-  }
-} */
-
-
-
-
-/* main */
+:root .prose{
+  --tw-prose-body: hsla(var(--bc)/.8);
+  --tw-prose-headings: hsl(var(--bc));
+  --tw-prose-lead: hsl(var(--bc));
+  --tw-prose-links: hsl(var(--bc));
+  --tw-prose-bold: hsl(var(--bc));
+  --tw-prose-counters: hsl(var(--bc));
+  --tw-prose-bullets: hsla(var(--bc)/.5);
+  --tw-prose-hr: hsla(var(--bc)/.2);
+  --tw-prose-quotes: hsl(var(--bc));
+  --tw-prose-quote-borders: hsla(var(--bc)/.2);
+  --tw-prose-captions: hsla(var(--bc)/.5);
+  --tw-prose-code: hsl(var(--bc));
+  --tw-prose-pre-code: hsl(var(--nc));
+  --tw-prose-pre-bg: hsl(var(--n));
+  --tw-prose-th-borders: hsla(var(--bc)/.5);
+  --tw-prose-td-borders: hsla(var(--bc)/.2);
+}
 .prose{
-  color: inherit;
-  & :where(
-    a,
-    blockquote,
-    figure figcaption,
-    a code,
-    thead,
-    strong,
-    .lead,
-    h1,
-    h2,
-    h3,
-    h4
-  ):not(:where([class~="not-prose"] *)){
-    color: inherit;
-  }
   & :where(code):not(:where([class~="not-prose"] *)){
-    background: hsla(var(--bc) / .1);
-    color: hsl(var(--bc));
     padding: 2px 8px;
     border-radius: var(--rounded-badge);
   }
@@ -57,24 +26,10 @@
     content: none;
   }
   pre{
-    background: hsl(var(--n));
-    color: hsl(var(--nc));
-    border-radius: var(--rounded-box);
     code{
-      border-radius: none;
-      background: inherit;
+      border-radius: 0;
       padding: 0;
-      color: inherit;
     }
-  }
-  blockquote{
-    border-left-color: hsl(var(--bc) / 40%);
-  }
-  & :where(ul > li, ol > li):not(:where([class~="not-prose"] *))::marker{
-    color: hsl(var(--bc) / 40%);
-  }
-  & :where(thead th, tbody td):not(:where([class~="not-prose"] *)){
-    color: inherit;
   }
   & :where(tbody tr, thead):not(:where([class~="not-prose"] *)){
     border-bottom-color: hsl(var(--bc) / 20%);

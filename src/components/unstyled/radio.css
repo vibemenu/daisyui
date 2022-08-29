@@ -1,5 +1,3 @@
-.radio{
-  &:focus {
-    @apply outline-none;
-  }
+.radio {
+  @apply shrink-0;
 }

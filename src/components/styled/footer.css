@@ -1,5 +1,5 @@
 .footer {
-  @apply gap-y-10 gap-x-4;
+  @apply gap-y-10 gap-x-4 text-sm;
   & > * {
     @apply gap-2;
   }

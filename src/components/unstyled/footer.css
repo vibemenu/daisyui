@@ -1,10 +1,10 @@
 .footer {
-  @apply grid grid-flow-row place-items-start w-full;
+  @apply grid w-full grid-flow-row place-items-start;
   & > * {
     @apply grid place-items-start;
   }
   &-center {
-    @apply text-center place-items-center;
+    @apply place-items-center text-center;
     & > * {
       @apply place-items-center;
     }

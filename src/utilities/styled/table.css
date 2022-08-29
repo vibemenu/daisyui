@@ -5,6 +5,10 @@
 }
 .table-compact {
   :where(th, td) {
+<<<<<<< HEAD
     @apply p-2;
+=======
+    @apply p-2 text-sm;
+>>>>>>> bb7e3f523b3be1fc73373b0f0ce6577f5eebd8b5
   }
 }

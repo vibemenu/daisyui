@@ -1,5 +1,3 @@
-.checkbox{
-  &:focus {
-    @apply outline-none;
-  }
+.checkbox {
+  @apply shrink-0;
 }

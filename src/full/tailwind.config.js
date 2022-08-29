@@ -1,34 +1,51 @@
 const plugin = require('tailwindcss/plugin')
 const emNotRem = require('../emNotRem');
+const responsiveRegex = require("../lib/responsiveRegex");
 module.exports = {
+  content: [
+    { raw: '' },
+  ],
+  safelist: responsiveRegex,
   theme: {
-    colors: require('../../colors'),
+    colors: require("../colors"),
     ...emNotRem
   },
   corePlugins: [
-    'animation',
-    'backgroundColor',
-    'backgroundImage',
-    'borderColor',
-    'divideColor',
-    'gradientColorStops',
-    'placeholderColor',
-    'preflight',
-    'ringColor',
-    'ringOffsetColor',
-    'ringOffsetWidth',
-    'ringOpacity',
-    'ringWidth',
-    'textColor',
-    'transitionProperty',
+    "animation",
+    "backgroundColor",
+    "backgroundImage",
+    "backgroundOpacity",
+    "backdropOpacity",
+    "borderColor",
+    "borderOpacity",
+    "divideColor",
+    "divideOpacity",
+    "gradientColorStops",
+    "opacity",
+    "placeholderColor",
+    "preflight",
+    "ringColor",
+    "ringOffsetColor",
+    "ringOffsetWidth",
+    "ringOpacity",
+    "ringWidth",
+    "textColor",
+    "textOpacity",
+    "transitionProperty",
   ],
   plugins: [
-    plugin(function({ addBase, addUtilities, addComponents }) {
-      addBase(require('../../dist/base'))
-      addComponents(require('../../dist/styled'))
-      addUtilities(require('../../dist/utilities'),{ variants: ['responsive'] })
-      addUtilities(require('../../dist/utilities-unstyled'),{ variants: ['responsive'] })
-      addUtilities(require('../../dist/utilities-styled'),{ variants: ['responsive'] })
-    })
+    plugin(function ({ addBase, addUtilities, addComponents }) {
+      addBase(require("../../dist/base"));
+      addComponents(require("../../dist/styled"));
+      addUtilities(require("../../dist/utilities"), {
+        variants: ["responsive"],
+      });
+      addUtilities(require("../../dist/utilities-unstyled"), {
+        variants: ["responsive"],
+      });
+      addUtilities(require("../../dist/utilities-styled"), {
+        variants: ["responsive"],
+      });
+    }),
   ],
-}
+};

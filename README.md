@@ -1,193 +1,171 @@
 <div align="center">
 
-[![][logo-url]][docs-url]  
+[![][logo-url]][docs-url]
 
-**Tailwind CSS Components**  
-Adds component classes like `btn`, `card` and more to Tailwind CSS
+**The most popular, free and open-source Tailwind CSS component library**  
 
-[ [See all components][docs-url] ]
-  
-[![][tweet]][tweet-url]  
+[ [See all components](https://daisyui.com/components/) ]
+
+[![][tweet]][tweet-url]
 
 </div>
 
-[![][banner-url]][docs-url]  
+[![][banner-url]][docs-url]
 
-# daisyUI  
+# daisyUI 2.0
+
 [![][build]][build-url] [![][npm]][npm-url] [![][number-of-components]][docs-url] [![][license]][license-url]  
-[![][dl]][npm-url] [![][stars]][gh-url] [![][commit]][gh-url]   
+[![][dl]][npm-url] [![][stars]][gh-url] [![][commit]][gh-url]
+
+- [Official website →](https://daisyui.com/)
+- [See all components →](https://daisyui.com/components/)
+- [How to use →](https://daisyui.com/docs/install/)
 
 
-- 👉 [ [See all components][docs-url] ]
-- 📘 Documents: [daisyui.com][docs-url]
-- 🎲 Try it online: [Tailwind Play][tw-play-url] | [Codepen][codepen-url]
-- 📦 Source: [GitHub][gh-url] | [NPM][npm-url] | [Unpkg][unpkg-url] | [JSdeliver][jsdeliver-url] | [cdnjs][cdnjs-url]
+## 🌼 Features
 
----
+- A plugin for Tailwind CSS
+- Faster development
+- Cleaner HTML
+- Customizable and themeable
+- Pure CSS. Works on all frameworks
 
-## 🌼 Features   
-<details>
-<summary>
-  show / hide
-</summary>
 
-- **Tailwind CSS plugin**  
-  daisyUI is a Tailwind CSS plugin. Install it and add it to your `tailwind.config.js` file.
-- **Component classes**  
-  Adds component classes to Tailwind. Classes like `btn`, `card`,… So you will end up with a cleaner HTML.
-- **Semantic color names**  
-  Adds color names like `primary`, `secondary`, `accent`,….
-- **Customizable**  
-  You can customize the design of components with Tailwind utility classes and CSS variables.
-- **Themeable**  
-  Add multiple themes and customize colors. You can even set a theme for a specific section of your page.
-- **RTL supported**  
-  Enable `rtl` config for right to left layouts.
-- **Pure CSS**  
-  No script file, no dependencies. Works on all frameworks and environments!
-
-</details>
-
----
-
-## 📀 Install now!  
+## 📀 Install now!
 
 ```bash
 npm i daisyui
 ```
 
-Then add daisyUI to your `tailwind.config.js`  
-[ [Read more][docs-url-install] ]
+Then add daisyUI to your `tailwind.config.js`:  
+
+
 ```js
 module.exports = {
-
-  plugins: [
-    require('daisyui'),
-  ],
-
-}
+  plugins: [require("daisyui")],
+};
 ```
 
+[ [Read more →][docs-url-install] ]
 
 <details>
 <summary>
   Or use a CDN
 </summary>
 
+Loading CSS files from CDN is not recommended for production. It's better to install Tailwind and daisyUI as Nodejs dependencies so you can config/customize everything, and purge unused styles.
 
-Loading CSS files from CDN is not recommended for production. It's better to install Tailwind and daisyUI as Nodejs dependencies so you can config/customize everything, and purge unused styles.*  
-
-  
 ```html
-<link href="https://cdn.jsdelivr.net/npm/daisyui@1.23.0/dist/full.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 ```
 
 </details>
 
----
-## 🚀 Use  
-Use component classes to build your UI.  
-```html
-<a class="btn">Hello!</a>
-```
-```html
-<input type="checkbox" class="checkbox"/>
-```
-```html
-<input type="checkbox" class="toggle"/>
-```
-```html
-<div class="alert alert-success">
-  Message sent successfully 
-</div>
-```
 
-👉 [See all components][docs-url]  
-🎲 [Try it online][tw-play-url]  
+## 🚀 Use
 
----
+[[See all components →](https://daisyui.com/components/)]
 
-## 📘 Documents + Examples  
-See the official site:  
-[ [daisyui.com][docs-url] ↗︎ ]
 
----
+## 📘 Documents + Examples
 
-## 🤝 Contributing  
-Read the documents for more info:  
-[ [Read contribution guide](https://github.com/saadeghi/daisyui/blob/master/.github/CONTRIBUTING.md) ]
+See the official site: [ [daisyui.com →](https://daisyui.com/)]
 
----
-## List of Components
+
+## 🤝 Support daisyUI
+
+|   |   |
+|---|---|
+| **Premium Sponsors** <br /> Support this project by becoming a premium sponsor. <br /> [[Become a sponsor](https://opencollective.com/daisyui)] | <a href="https://opencollective.com/daisyui" target="_blank"><img src="https://opencollective.com/daisyui/tiers/premium-sponsor.svg?button=false&width=500&avatarHeight=92"></a> |
+| **Backers** <br /> Thank you to all our backers! <br /> [[Become a backer](https://opencollective.com/daisyui)] | <a href="https://opencollective.com/daisyui" target="_blank"><img src="https://opencollective.com/daisyui/backers.svg?button=false&width=500&avatarHeight=46"></a> |
+| **Contributors** <br /> This project exists thanks to all the people who contribute. <br /> [[Contribute](https://github.com/saadeghi/daisyui/blob/master/.github/CONTRIBUTING.md)] | |
+
+Tweet about daisyUI: [![][tweet]][tweet-url]
+
+
+## 📁 List of components
+
 <details>
 <summary>
   show / hide
 </summary>
 
-- [x] Alert
-- [x] Artboard
-- [ ] App bar
-- [x] Avatar
-  - [x] Avatar group
-- [x] Badge
-- [ ] Banner
-- [x] Breadcrumb
-- [x] Button
-  - [x] Button group
-- [ ] Calendar
-- [x] Carousel
-- [x] Card
-- [ ] Chat bubble
-- [x] Collapse (Accordion)
-- [ ] Comment
-- [x] Countdown
-- [ ] Cover
-- [x] Divider
-- [x] Drawer
-- [ ] Empty placeholder
-- [x] Footer
-- [ ] Form
-  - [x] Select
-  - [x] Text input
-  - [x] Text area
+- Actions
+  - [x] Button
+  - [x] Dropdown
+  - [x] Modal
+  - [x] Swap
+
+- Data display
+  - [x] Alert
+  - [x] Avatar
+  - [x] Badge
+  - [ ] Banner
+  - [ ] Calendar
+  - [x] Card
+  - [x] Carousel
+  - [ ] Chat bubble
+  - [x] Collapse
+  - [ ] Comment
+  - [x] Countdown
+  - [ ] Empty placeholder
+  - [x] Kbd
+  - [ ] Loading
+  - [x] Progress
+  - [x] Radial progress
+  - [x] Stat
+  - [x] Table
+  - [ ] Tag
+  - [ ] Timeline
+  - [x] Toast
+  - [x] Tooltip
+  - [ ] Treeview
+
+- Data input
   - [x] Checkbox
+  - [x] Text input
   - [x] Radio
-  - [x] Range slider
+  - [x] Range
   - [x] Rating
+  - [x] Select
+  - [x] Textarea
   - [x] Toggle
   - [ ] Upload
-- [x] Hero
-- [x] Indicator
-- [x] Kbd
-- [x] Link
-- [ ] Loading
-- [x] Menu
-- [ ] Mockup
+  
+- Layout
+  - [x] Artboard
+  - [x] Button group
+  - [x] Divider
+  - [x] Drawer
+  - [x] Footer
+  - [x] Hero
+  - [x] Indicator
+  - [x] Input group
+  - [x] Mask
+  - [x] Stack
+
+- Navigation
+  - [x] Bottom Navigation
+  - [x] Breadcrumbs
+  - [x] Link
+  - [x] Menu
+  - [x] Navbar
+  - [x] Pagination
+  - [x] Steps
+  - [x] Tab
+
+- Mockup
   - [ ] Browser
   - [x] Code
   - [x] Phone
   - [x] Window
-- [x] Navbar
-- [x] Mask
-- [x] Modal
-- [x] Pagination
-- [x] Progress
-- [x] Stack
-- [x] Stat
-- [x] Steps
-- [ ] Tag
-- [x] Table
-- [x] Tabs
-- [ ] Timeline
-- [ ] Toast
-- [x] Tooltip
-- [ ] Treeview
+
 
 </details>
 
----
-## Featured on:
+
+## 📰 Featured on:
 
 <details>
 <summary>
@@ -206,6 +184,7 @@ Read the documents for more info:
   - [speckyboy](https://speckyboy.com/weekly-news-for-designers-594/)
   - [dailydev](https://app.daily.dev/posts/-4OPGw0te)
   - [Future Tech Blog (Japanese)](https://future-architect.github.io/articles/20211124a/)
+  - [Adding Tailwind and Daisy UI to SvelteKit](https://dev.to/brewhousedigital/adding-tailwind-and-daisy-ui-to-sveltekit-2hk5)
 - Youtube videos
   - [Supabase & Sveltekit - Build Twitter in 75 minutes](https://www.youtube.com/watch?v=mPQyckogDYc)
   - [Setup the Best Frontend JavaScript Stack - Svelte, Vite, TailwindCSS and DaisyUI](https://www.youtube.com/watch?v=mEBPN_9jTAE)
@@ -215,6 +194,12 @@ Read the documents for more info:
   - [How to use daisyUI in SvelteKit?](https://www.youtube.com/watch?v=haKnkk6ds20) 
   - [DaisyUI Untuk Yang Mau Pindah ke TailwindCSS dari Bootstrap (Indonesian)](https://www.youtube.com/watch?v=Wm2g6FWec34)
   - [Next.js - Tailwind - DeisyUI Setup](https://www.youtube.com/watch?v=uXQgJbUj3PQ)
+  - [Svelte Setup with Vite, Tailwind, DaisyUI. Custom Themes!](https://www.youtube.com/watch?v=5lF5PxBJoso)
+  - [Build a blog with Svelte](https://www.youtube.com/watch?v=u9jtHBE6NL8)
+  - [Building a product in less than 10 minutes: Laravel, InertiaJS, VueJS, TailwindCSS, DaisyUI](https://www.youtube.com/watch?v=XR1rS-CCfx0)
+  - [Infinite scrolling with MERN | ReactJS, TailwindCSS v3, DaisyUI | NodeJs, Express, MongoDB](https://www.youtube.com/watch?v=y7LYoRGRqRI)
+  - [How to install TailwindCSS v3 and DaisyUI to your React app](https://www.youtube.com/watch?v=XBYvzPe7skc)
+  - [Laravel: DaisyUI Agiliza Tus Desarrollos Con TailwindCSS + Select2 Tailwind Style (Spanish)](https://www.youtube.com/watch?v=28db3jojTgo)
 - Courses
   - [Building with SvelteKit and GraphCMS](https://explorers.netlify.com/learn/building-with-sveltekit-and-graphcms)
   - [Svelte for Beginners by Mike Karan](https://www.udemy.com/course/svelte-for-beginners/)
@@ -226,17 +211,15 @@ Read the documents for more info:
 </details>
 
 ---
-  
+
 <div align="center">
   
   
 ༼ つ ◕_◕ ༽つ  Please share  
   
-[![][tweet]][tweet-url]  
+[![][tweet]][tweet-url]
 
 </div>
-
-
 
 [install-size]: https://badgen.net/bundlephobia/minzip/daisyui?label=bundle%20size&color=green
 [build]: https://badgen.net/github/checks/saadeghi/daisyui?label=build
@@ -246,7 +229,6 @@ Read the documents for more info:
 [license]: https://badgen.net/github/license/saadeghi/daisyui?color=green
 [stars]: https://badgen.net/github/stars/saadeghi/daisyui?color=green
 [tweet]: https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fsaadeghi%2Fdaisyui
-
 [install-size-url]: https://bundlephobia.com/result?p=daisyui
 [license-url]: https://github.com/saadeghi/daisyui/blob/master/LICENSE
 [npm-url]: https://www.npmjs.com/package/daisyui
@@ -257,12 +239,9 @@ Read the documents for more info:
 [unpkg-url]: https://unpkg.com/browse/daisyui/
 [jsdeliver-url]: https://www.jsdelivr.com/package/npm/daisyui
 [build-url]: https://github.com/saadeghi/daisyui/actions
-[tweet-url]: https://twitter.com/intent/tweet?text=daisyUI%20%0D%0AUI%20Components%20for%20Tailwind%20CSS%20%0D%0Ahttps://github.com/saadeghi/daisyui
-[number-of-components]: https://badgen.net/badge/total%20components/41/green
-
+[tweet-url]: https://twitter.com/intent/tweet?text=daisyUI%20%0D%0AComponents%20for%20Tailwind%20CSS%20%0D%0Ahttps://github.com/saadeghi/daisyui
+[number-of-components]: https://badgen.net/badge/total%20components/47/green
 [docs-url-install]: https://daisyui.com/docs/install
 [docs-url]: https://daisyui.com/
 [logo-url]: https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo-4.svg
 [banner-url]: https://raw.githubusercontent.com/saadeghi/files/main/daisyui/card-3.png
-
-

@@ -2,7 +2,7 @@
   @apply flex flex-wrap items-end;
 }
 .tab {
-  @apply inline-flex flex-wrap items-center justify-center text-center cursor-pointer relative select-none;
-  @apply leading-loose h-8;
+  @apply relative inline-flex cursor-pointer select-none flex-wrap items-center justify-center text-center;
+  @apply h-8 text-sm leading-loose;
   --tab-padding: 1em;
 }

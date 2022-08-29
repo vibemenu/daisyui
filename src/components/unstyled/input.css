@@ -1,33 +1,33 @@
 .input {
-  @apply transition duration-200 ease-in-out flex-shrink;
-  @apply px-4 h-12  leading-loose;
-  &:focus {
-    @apply outline-none;
-  }
+  @apply flex-shrink transition duration-200 ease-in-out;
+  @apply h-12 px-4 text-sm leading-loose;
 }
 .input-group {
-  @apply flex items-stretch w-full;
+  @apply flex w-full items-stretch;
+  > .input {
+    @apply isolate;
+  }
   > *,
   > .input {
     @apply rounded-none;
   }
   &-md {
-    @apply leading-loose;
+    @apply text-sm leading-loose;
   }
   &-lg {
-    @apply leading-loose;
+    @apply text-lg leading-loose;
   }
   &-sm {
-    @apply leading-8;
+    @apply text-sm leading-8;
   }
   &-xs {
-    @apply leading-relaxed;
+    @apply text-xs leading-relaxed;
   }
   :where(span) {
-    @apply bg-base-300 flex items-center px-4;
+    @apply flex items-center bg-base-300 px-4;
   }
   :first-child {
-    border-top-left-radius: var(--rounded-btn, 0.5em);
+    border-top-left-radius: var(--rounded-btn, 0.5rem);
     border-top-right-radius: 0;
     border-bottom-left-radius: var(--rounded-btn, 0.5em);
     border-bottom-right-radius: 0;
